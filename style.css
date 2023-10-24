@@ -4,85 +4,121 @@
     box-sizing: border-box;
     font-family: Roboto;
 }
+html{
+    font-size: 62.5%;
+}
 .container{
-    width: 1270px;
+    width: 127rem;
     margin: 0 auto;
-}
-.header-logo{
-    padding: 40px;
-}
-.header-logo p{
-    color: #333;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 0px;
-    letter-spacing: 1px;
-    
-}
-.header-logo img{
-    padding-left: 10px;
 }
 .header-top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.header-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-logo p{
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: 0.1rem;
+}
+.navber{
+    padding-right: 6rem;
 }
 .navber ul{
     display: flex;
-    justify-content: space-between;
-
+    align-items: center
 }
 .navber li{
+    padding:0rem 2.5rem ;
     list-style: none;
-    padding: 40px;
 }
-.navber a{
+.navber .active{
+    position: relative;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+/* .navber .active::before{
+    position: absolute;
+    content: "";
+    width: 68px;
+    height: 0.971px;
+    background-color: #333333;
+    top: 0;
+} */
+.navber li a{
     text-decoration: none;
     color: #333;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 400;
-    line-height: 12px;
+    line-height: 1.2rem;
     letter-spacing: 2.4px;
+    padding: 0.5rem 1rem;
 }
 /* section two start */
 .hero-section-one{
     display: flex;
     justify-content: space-between;
-
 }
 .hero-section-two{
     width: 40%;
-    margin-top: 300px;
+    padding-top: 30rem;
 }
 .hero-img{
-    width: 60%;
+    position: relative;
+}
+.header-btn button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 4rem;
+    background-color: #fff;
+    border: none;
+    color: var(--Gray-1, #333);
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem; /* 100% */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 .hero-section-two h3{
     color: #bdbdbd;
-    font-size: 64px;
+    font-size: 6.4rem;
     font-weight: 300;
-    line-height: 64px;
+    line-height: 6.4rem;
 }
 .hero-section-two h4{
     color: #333;
-    font-size: 64px;
+    font-size: 6.4rem;
     font-weight: 700;
-    line-height: 64px;
+    line-height: 6.4rem;
 }
 .hero-section-two i{
-    margin-top: 50px;
+    margin-top: 5rem;
     border: 1px solid #f2f2f2;
     background-color: #f9f9f9;
-    padding: 20px;
+    padding: 2rem;
 }
 .icon{
     display: flex;
-    gap: 50px;
+    gap: 5rem;
 }
 .number{
     display: flex;
-    gap: 30px;
-    margin-top: 50px;
-    font-size: 24px;
+    gap: 3rem;
+    margin-top: 5rem;
+    font-size: 2.4rem;
     color: #BDBDBD;
 }
 .num-one{
@@ -91,12 +127,14 @@
 }
 /* section three start */
 .grid-section{
-    padding-top: 100px;
+    padding-top: 10rem;
 }
 .wrapper {
     display: flex;
-    gap: 50px;
-
+    gap: 5rem;
+    background: var(--1, #FBFBFB);
+    padding-left: 8rem;
+    padding-right: 6rem;
 }
 .flex-area{
     display: flex;
@@ -106,17 +144,557 @@
 .flex-area-sub{
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 3rem;
 }
-  .one {
+.four h2{
+    color: #BDBDBD;
+    font-size: 6.4rem;
+    font-weight: 300;
+    line-height: 6.4rem;
+    font-style: normal;
+    margin-top: 5rem;
+}
+.four p{
+    color: #000;
+    margin-top: 2rem;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.5rem; /* 156.25% */
+}
+.four button{
+    color: var(--Gray-1, #333);
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem; /* 100% */
+    letter-spacing: 2.4px;
+    padding: 2rem 3rem;
+    border: none  ;
+    margin-top: 4rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+/* section four start */
+.four-section h2{
+    color: var(--Gray-4, #BDBDBD);
+    font-family: Roboto;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 6.4rem; /* 100% */
+    text-align: center;
+    padding-top: 1.2rem;
+}
+.lorem{
+    display: flex;
+    gap: 30rem;
+    padding-top: 8rem;
+}
+.two{
+    display: flex;
+    gap: 2rem;
+}
+.three{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.two h2{
+    color: var(--Gray-6, #F2F2F2);
+    font-family: Roboto;
+    font-size: 20rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.three h2{
+    color: var(--Gray-6, #F2F2F2);
+    font-family: Roboto;
+    font-size: 20rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.two, .three p{
+    color: var(--Gray-1, #333);
+    font-family: Roboto;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    line-height: 3.6rem; /* 163.636% */
+}
+/* section five start  */
+.project-section h2{
+    color: var(--Gray-4, #BDBDBD);
+    font-family: Roboto;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 300;
+    padding-top: 4rem;
+    padding-bottom: 80px;
+    line-height: 6.4rem; /* 100% */
+}
+.img-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.box-bg{
+    width: 48.7%;
+    background-color: gray;
+}
+.box-1{
+    width: 23%;
+}
+.box-2{
+    width: 39%;
+}
+.box-3{
+    width: 33%;
+}
+.box-1 img , .box-2 img , .box-3 img{
+    width: 100%;
+    height: 100%;
+}
+.box-bg img{
+    width: 100%;
+    height: 100%;
+}
+.btn-two button{ 
+    display: flex;
+    margin-left: auto;
+    padding: 2rem 3rem;
+    margin-top: 3rem;
+    background-color: #333;
+    border: none;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem; /* 100% */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.box-bg h3{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 4rem;
+    padding-left: 6rem;
+    width: 50%;
+    line-height: 6rem;
+}
+.box-bg button{
+    padding: 2rem;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    font-family: Gothic A1;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem; /* 100% */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    padding-left: 6rem;
+    padding-top: 3rem;
+    cursor: pointer;
+}
+.img-section-five button{
+    float: right;
+    padding: 2rem 3rem;
+    color: #FFF;
+    background-color: #333;
+}
+.contact-one{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    height: 36rem;
+}
+.contact-two{
+    width: 35%;
+    height: 100%;
+}
+.contact-img{
+    width: 62%;
+    height: 100%;
+}
+.contact-img img{
+    width: 100%;
+    height: 100%;
+}
+.contact-section h2{
+    padding-top: 5rem;
+    color: var(--Gray-4, #BDBDBD);
+    font-family: Roboto;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 6.4rem; /* 100% */
+    padding-bottom: 3rem;
+}
+.contact-two input{
+    width: 100%;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: #f3f3f3;
+}
+.
+.contact-two::placeholder{
+    color: #8D8D8D;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+}
+.contact-two textarea{
+    width: 100%;
+    padding-left: 2rem;
+    border: none;
+    outline: none;
+    background-color: #f3f3f3;
+}
+.btn-three button{
+    padding: 2rem 3rem;
+    margin-top: 3rem;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem; /* 100% */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    background-color: #333;
+    border: none;
+    margin-bottom: 8rem;
+    cursor: pointer;
+}
+/* footer section start */
+.footer-section{
+    background-color: #333;
+}
+.footer-section-one{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+}
+.footer-border{
+    position: relative;
+}
+.footer-border::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color:rgba(255, 255, 255, 0.1) ;
+    bottom: 0;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+}
+.information a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4rem; /* 171.429% */
+    letter-spacing: 0.42px;
+}
+.information h4{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2rem;
+    }
+.location{
+    display: flex;
+    gap: 2rem;
+}
+.contacts a{
+    text-decoration: none;
+    color: #FFF;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem; /* 171.429% */
+    letter-spacing: 0.42px;
+}
+.contacts i{
+    color: #FFF;
+}
+.phone p{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem; /* 171.429% */
+    letter-spacing: 0.42px;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contacts h4{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.phone{
+    display: flex;
+    gap: 20px;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.inbox{
+    display: flex;
+    gap: 2rem;
+}
+.inbox a{
+    text-decoration: none;
+    color: #FFF;
+}
+.social h3{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+.footer-section i {
+    color: #FFF;
+    font-size: 2rem;
+}
+.last-footer{
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.last-footer p{
+    text-decoration: none;
+    color: rgba(200, 200, 200, 0.50);
+    font-family: Open Sans;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.2rem;
+}
 
-  }
-  .two {
 
-  }
-  .three {
- 
-  }
-  .four {
+    /* Gellery Page Start */
 
-  }
+
+#gellery .gellery-section-1{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#gellery .hero-section-two{
+    width: auto;
+    padding-top: 0;
+}
+#gellery .gellery-img-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-top: 5rem;
+}
+#gellery .gellery-img{
+    width: 18%;
+}
+#gellery .gellery-img img{
+    width: 100%;
+    height: 100%;
+}
+#gellery .icon-section{
+    display: flex;
+    gap: 4rem;
+    align-items: baseline;
+}
+#gellery .icon-section .icon i{
+    border: 1px solid #f2f2f2;
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+#gellery .num-one{
+    color: #333;
+}
+
+
+/* Your project start */
+
+.your-project-two{
+   display: flex;
+}
+.your-project-three{
+    width: 50%;
+}
+.your-project-one{
+    padding-top: 6rem;
+}
+.new-project{
+    width: 50%;
+    background-color: #fbfbfb;
+    padding-left: 3rem;
+    padding-right: 7rem;
+}
+.new-project h2{
+    color: var(--Gray-4, #BDBDBD);
+    font-family: Roboto;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 7rem;
+    padding-top: 3rem;
+    }
+.new-project p{
+    padding-bottom: 6rem;
+    color: #000;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px; /* 156.25% */
+}
+.new-project button{
+    padding: 2rem;
+    background-color: #fff;
+    border: none;
+    color: var(--Gray-1, #333);
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem; /* 100% */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#project .hero-section-two{
+    padding-top: 5rem;
+}
+#project .hero-section-two{
+    width: auto;
+    margin-top: 0;
+}
+#project .icon-section{
+    display: flex;
+    gap: 4rem;
+    align-items: baseline;
+    padding-bottom: 7rem;
+}
+#project .icon-section .icon i{
+    border: 1px solid #f2f2f2;
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+#project .num-one{
+    color: #333;
+}
+/* contact section start */
+
+#contacts .hero-section-two{
+    padding-top: 5rem;
+}
+#contacts .hero-section-two{
+    width: auto;
+    margin-top: 0;
+}
+.contacts-section-one{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10rem;
+}
+#contacts .hero-section-two{
+    width: 50%;
+}
+.ifream{
+    width: 47.5%;
+    border: 1px solid #000;
+    height: 100%;
+}
+.contacts-section-one h5{
+    color: #333;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 5rem;
+    padding-bottom: 0.5rem;
+}
+.contacts-section-one p{
+    color: #333;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140.8%;
+}
+.contact-number p{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: #333;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.gmail-four p{
+    color: #333;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 3rem;
+}
+.contacts-section-one button{
+    padding: 3rem 8rem;
+    color: #FFF;
+    background-color: #333;
+    border: none;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem; /* 100% */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
