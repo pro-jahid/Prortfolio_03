@@ -63,17 +63,33 @@ html{
     letter-spacing: 2.4px;
     padding: 0.5rem 1rem;
 }
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.9);
+    float: right;
+    line-height: 80px;
+    margin-right: 0px;
+}
+#check{
+    display: none;
+}
 /* section two start */
 .hero-section-one{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .hero-section-two{
-    width: 40%;
-    padding-top: 30rem;
+    width: 30%;
 }
 .hero-img{
+    width: 60%;
     position: relative;
+}
+.hero-img img{
+    width: 100%;
 }
 .header-btn button{
     position: absolute;
@@ -131,20 +147,27 @@ html{
 }
 .wrapper {
     display: flex;
-    gap: 5rem;
+    flex-wrap: wrap;
+    gap: 3rem;
     background: var(--1, #FBFBFB);
     padding-left: 8rem;
     padding-right: 6rem;
 }
 .flex-area{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
+    width: 51%;
 }
 .flex-area-sub{
+    width: 47%;
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
+}
+.four{
+    width: 46%;
 }
 .four h2{
     color: #BDBDBD;
@@ -178,6 +201,9 @@ html{
     cursor: pointer;
 }
 /* section four start */
+.section-4{
+    padding-top: 8rem;
+}
 .four-section h2{
     color: var(--Gray-4, #BDBDBD);
     font-family: Roboto;
@@ -190,14 +216,22 @@ html{
 }
 .lorem{
     display: flex;
-    gap: 30rem;
-    padding-top: 8rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+}
+.ipsum{
+    width: 40%;
+}
+.amet{
+    width: 40%;
 }
 .two{
     display: flex;
     gap: 2rem;
 }
 .three{
+    width: 47%;
     display: flex;
     gap: 2rem;
     align-items: center;
@@ -317,6 +351,7 @@ html{
 }
 .contact-one{
     display: flex;
+    flex-wrap: wrap;
     align-items: start;
     justify-content: space-between;
     height: 36rem;
@@ -392,6 +427,7 @@ html{
 }
 .footer-section-one{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 6rem;
     padding-bottom: 5rem;
@@ -558,6 +594,7 @@ html{
 
 .your-project-two{
    display: flex;
+   flex-wrap: wrap;
 }
 .your-project-three{
     width: 50%;
@@ -636,6 +673,7 @@ html{
 }
 .contacts-section-one{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 10rem;
 }
@@ -697,4 +735,219 @@ html{
     letter-spacing: 2.4px;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+
+
+@media (max-width:1270px){
+
+}
+@media (max-width:992px){
+    .container{
+        width: 95%;  
+    }
+    .navber{
+        padding-right: 0rem;
+    }
+    .navber ul {
+        position: fixed;
+        width: 100vw;
+        height: 70vh;
+        top: 102px;
+        left: -200%;
+        background-color: #fff;
+        transition: all .1s;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: space-around;
+        padding-left: 0;
+        text-align: left;
+        align-items: center;
+        padding-top: 20px;
+        z-index: 1;
+        padding-bottom: 20px;
+        box-shadow: -3px 62px 111px -14px rgba(0,0,0,0.66);
+        -webkit-box-shadow: -3px 62px 111px -14px rgba(0,0,0,0.66);
+        -moz-box-shadow: -3px 62px 111px -14px rgba(0,0,0,0.66);
+    }
+     #check:checked ~ ul {
+        left: 0;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .flex-area{
+        width: 100%;
+        justify-content: center;
+    }
+    .four{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    .hero-section-one{
+        gap: 3rem;
+    }
+    .hero-section-two{
+        width: 100%;
+        text-align: center;
+    }
+    .icon{
+        justify-content: center;
+    }
+    .number{
+        justify-content: center;
+    }
+    .hero-img{
+        width: 100%;
+    }
+    .wrapper{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .lorem{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .ipsum{
+        width: 100%;
+    }
+    .amet{
+        width: 100%;
+    }
+    .project-section h2{
+        text-align: center;
+    }
+    .box-bg{
+        width: 80%;
+        height: 30rem;
+        margin: 0 auto;
+    }
+    .box-1{
+        width: 80%;
+        height: 30rem;
+        margin: 0 auto;
+    }
+    .box-2{
+        width: 80%;
+        height: 30rem;
+        margin: 0 auto;
+    }
+    .box-3{
+        width: 80%;
+        height: 30rem;
+        margin: 0 auto;
+    }
+    .btn-two button{
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    .contact-section h2{
+        text-align: center;
+    }
+    .contact-one{
+        gap: 10rem;
+        margin-bottom: 48rem;
+    }
+    .contact-two{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contact-img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .btn-three button{
+        margin: 0 auto;
+        display: flex;
+    }
+    .footer-section-one{
+        margin-top: 4rem;
+    }
+    .footer-logo{
+        width: 30%;
+    }
+    .information{
+        width: 30%;
+    }
+    .contacts{
+        width: 40%;
+    }
+    .social{
+        width: 50%;
+        padding-top: 3rem;
+        margin: 0 auto;
+    }
+    .social h3{
+        text-align: center;
+    }
+    #gellery .gellery-img-area{
+        gap: 5rem;
+    }
+    #gellery .gellery-img{
+        width: 47%;
+    }
+    #gellery .icon-section{
+        justify-content: center;
+    }
+    .your-project-three{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .new-project{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .new-project h2{
+        text-align: center;
+    }
+    #project .icon-section{
+        justify-content: center;
+    }
+    #contacts .hero-section-two{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .ifream{
+        margin-top: 5rem;
+        width: 83%;
+        margin: 0 auto;
+    }
+    .contacts-section-one button{
+        margin-bottom: 5rem;
+    }
+
+}
+@media (max-width:576px){
+    .flex-area-sub{
+        width: 100%;
+    }
+    .three{
+        width: 100%;
+    }
+    .footer-logo{
+        width: 45%;
+    }
+    .information{
+        width: 33%;
+    }
+    .contacts{
+        width: 45%;
+        padding-top: 8rem;
+    }
+    .social{
+        width: 45%;
+        padding-top: 8rem;
+    }
+    #gellery .gellery-img{
+        width: 100%;
+        height: 50rem;
+    }
+    .ifream{
+        width: 100%;
+    }
 }
