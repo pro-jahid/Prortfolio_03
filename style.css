@@ -8,7 +8,9 @@ html{
     font-size: 62.5%;
 }
 .container{
-    width: 127rem;
+    width: 121rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     margin: 0 auto;
 }
 .header-top{
@@ -423,6 +425,7 @@ html{
 .contact-two textarea{
     width: 100%;
     padding-left: 2rem;
+    padding-top: 1.2rem;
     border: none;
     outline: none;
     background-color: #f3f3f3;
