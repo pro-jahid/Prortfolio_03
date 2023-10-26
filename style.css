@@ -607,7 +607,7 @@ html{
     padding-top: 5rem;
 }
 #gellery .gellery-img{
-    width: 18%;
+    width: 17%;
 }
 #gellery .gellery-img img{
     width: 100%;
@@ -637,6 +637,11 @@ html{
 }
 .your-project-three{
     width: 50%;
+}
+
+#project .your-project-three img{
+    width: 100%;
+    display: block;
 }
 .your-project-one{
     padding-top: 6rem;
@@ -886,6 +891,10 @@ html{
     .project-section h2{
         text-align: center;
     }
+    #project .your-project-three img{
+        width: 100%;
+        display: block;
+    }
     .box-bg{
         width: 80%;
         height: 30rem;
@@ -962,6 +971,13 @@ html{
         width: 100%;
         margin: 0 auto;
     }
+    .your-project-three img{
+        width: 100%;
+        display: block;
+    }
+    .img-project img{
+        width: 100%;
+    }
     .new-project{
         width: 100%;
         margin: 0 auto;
@@ -996,6 +1012,9 @@ html{
     .footer-logo{
         width: 45%;
     }
+    .lorem{
+        gap: 3rem;
+    }
     .information{
         width: 33%;
     }
@@ -1010,6 +1029,10 @@ html{
     #gellery .gellery-img{
         width: 100%;
         height: 50rem;
+    }
+    #project .your-project-three img{
+        width: 100%;
+        display: block;
     }
     .ifream{
         width: 100%;
