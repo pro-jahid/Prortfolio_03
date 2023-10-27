@@ -1,8 +1,14 @@
+:root {
+    --primary-text: #333;
+    --secondary-text: #fff;
+    --thirth-color: #bdbdbd;
+    --font-family: Roboto;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: var(--font-family);
 }
 html{
     font-size: 62.5%;
@@ -26,7 +32,7 @@ html{
     align-items: center;
 }
 .header-logo p{
-    color: #333;
+    color: var(--primary-text);
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 0px;
@@ -45,20 +51,20 @@ html{
 }
 .navber .active{
     position: relative;
-    border-top: 1px solid #333333;
-    border-bottom: 1px solid #333333;
+    border-top: 1px solid var(--primary-text);
+    border-bottom: 1px solid var(--primary-text);
 }
 /* .navber .active::before{
     position: absolute;
     content: "";
     width: 68px;
     height: 0.971px;
-    background-color: #333333;
+    background-color: var(--primary-text);
     top: 0;
 } */
 .navber li a{
     text-decoration: none;
-    color: #333;
+    color: var(--primary-text);
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.2rem;
@@ -98,10 +104,10 @@ html{
     bottom: 0;
     left: 0;
     padding: 2rem 4rem;
-    background-color: #fff;
+    background-color: var(--secondary-text);
     border: none;
-    color: var(--Gray-1, #333);
-    font-family: Roboto;
+    color: var(--Gray-1, var(--primary-text));
+    font-family: var(--font-family);
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
@@ -111,13 +117,13 @@ html{
     cursor: pointer;
 }
 .hero-section-two h3{
-    color: #bdbdbd;
+    color: var(--thirth-color);
     font-size: 6.4rem;
     font-weight: 300;
     line-height: 6.4rem;
 }
 .hero-section-two h4{
-    color: #333;
+    color: var(--primary-text);
     font-size: 6.4rem;
     font-weight: 700;
     line-height: 6.4rem;
@@ -138,7 +144,7 @@ html{
     gap: 3rem;
     margin-top: 5rem;
     font-size: 2.4rem;
-    color: #BDBDBD;
+    color: var(--thirth-color);
 }
 .num-one{
     display: flex;
@@ -188,7 +194,7 @@ html{
     width: 46%;
 }
 .four h2{
-    color: #BDBDBD;
+    color: var(--thirth-color);
     font-size: 6.4rem;
     font-weight: 300;
     line-height: 6.4rem;
@@ -198,15 +204,15 @@ html{
 .four p{
     color: #000;
     margin-top: 2rem;
-    font-family: Roboto;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 300;
     line-height: 2.5rem; /* 156.25% */
 }
 .four button{
-    color: var(--Gray-1, #333);
-    font-family: Roboto;
+    color: var(--Gray-1, var(--primary-text));
+    font-family: var(--font-family);
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
@@ -215,7 +221,7 @@ html{
     padding: 2rem 3rem;
     border: none  ;
     margin-top: 4rem;
-    background-color: #fff;
+    background-color: var(--secondary-text);
     cursor: pointer;
 }
 /* section four start */
@@ -223,13 +229,13 @@ html{
     padding-top: 8rem;
 }
 .four-section h2{
-    color: var(--Gray-4, #BDBDBD);
-    font-family: Roboto;
+    color: var(--Gray-4, var(--thirth-color));
+    font-family: var(--font-family);
     font-size: 6.4rem;
     font-style: normal;
     font-weight: 300;
     line-height: 6.4rem; /* 100% */
-    text-align: center;
+    text-align: start;
     padding-top: 1.2rem;
 }
 .lorem{
@@ -262,7 +268,7 @@ html{
 
 .two h2{
     color: var(--Gray-6, #F2F2F2);
-    font-family: Roboto;
+    font-family: var(--font-family);
     font-size: 20rem;
     font-style: normal;
     font-weight: 900;
@@ -270,15 +276,15 @@ html{
 }
 .three-main h2{
     color: var(--Gray-6, #F2F2F2);
-    font-family: Roboto;
+    font-family: var(--font-family);
     font-size: 20rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
 }
 .two, .three-main p{
-    color: var(--Gray-1, #333);
-    font-family: Roboto;
+    color: var(--Gray-1, var(--primary-text));
+    font-family: var(--font-family);
     font-size: 2.2rem;
     font-style: normal;
     font-weight: 400;
@@ -287,8 +293,8 @@ html{
 }
 /* section five start  */
 .project-section h2{
-    color: var(--Gray-4, #BDBDBD);
-    font-family: Roboto;
+    color: var(--Gray-4, var(--thirth-color));
+    font-family: var(--font-family);
     font-size: 6.4rem;
     font-style: normal;
     font-weight: 300;
@@ -299,18 +305,18 @@ html{
 .img-section{
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
     flex-wrap: wrap;
+    gap: 3rem;
 }
 .box-bg{
-    width: 48.7%;
+    width: 48.5%;
     background-color: gray;
 }
 .box-1{
-    width: 23%;
+    width: 24%;
 }
 .box-2{
-    width: 39%;
+    width: 37%;
 }
 .box-3{
     width: 33%;
@@ -328,10 +334,10 @@ html{
     margin-left: auto;
     padding: 2rem 3rem;
     margin-top: 3rem;
-    background-color: #333;
+    background-color: var(--primary-text);
     border: none;
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--secondary-text);
+    font-family: var(--font-family);
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
@@ -341,8 +347,8 @@ html{
     cursor: pointer;
 }
 .box-bg h3{
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--secondary-text);
+    font-family: var(--font-family);
     font-size: 6.4rem;
     font-style: normal;
     font-weight: 700;
@@ -353,7 +359,7 @@ html{
 }
 .box-bg button{
     padding: 2rem;
-    color: #fff;
+    color: var(--secondary-text);
     border: none;
     background-color: transparent;
     font-family: Gothic A1;
@@ -370,23 +376,26 @@ html{
 .img-section-five button{
     float: right;
     padding: 2rem 3rem;
-    color: #FFF;
-    background-color: #333;
+    color: var(--secondary-text);
+    background-color: var(--primary-text);
 }
 .contact-one{
     display: flex;
     flex-wrap: wrap;
     align-items: start;
     justify-content: space-between;
-    height: 36rem;
+    padding-bottom: 8rem;
+}
+.contact-form {
+    width: 35%;    
 }
 .contact-two{
-    width: 35%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
 }
 .contact-img{
     width: 62%;
-    height: 100%;
 }
 .contact-img img{
     width: 100%;
@@ -394,8 +403,8 @@ html{
 }
 .contact-section h2{
     padding-top: 5rem;
-    color: var(--Gray-4, #BDBDBD);
-    font-family: Roboto;
+    color: var(--Gray-4, var(--thirth-color));
+    font-family: var(--font-family);
     font-size: 6.4rem;
     font-style: normal;
     font-weight: 300;
@@ -405,22 +414,36 @@ html{
 .contact-two input{
     width: 100%;
     padding-left: 2rem;
-    margin-bottom: 1rem;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     border: none;
     outline: none;
     background-color: #f3f3f3;
 }
-.
+
 .contact-two::placeholder{
     color: #8D8D8D;
-    font-family: Roboto;
+    font-family: var(--font-family);
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.56px;
+    
+}
+input:required:placeholder {
+    position: relative;
+}
+input:required:placeholder::before {
+    content: "*";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    color: red;
+    font-size: 20px;
 }
 .contact-two textarea{
     width: 100%;
@@ -432,23 +455,22 @@ html{
 }
 .btn-three button{
     padding: 2rem 3rem;
-    margin-top: 3rem;
-    color: #FFF;
-    font-family: Roboto;
+    margin-top: 4rem;
+    color: var(--secondary-text);
+    font-family: var(--font-family);
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.2rem; /* 100% */
     letter-spacing: 2.4px;
     text-transform: uppercase;
-    background-color: #333;
+    background-color: var(--primary-text);
     border: none;
-    margin-bottom: 8rem;
     cursor: pointer;
 }
 /* footer section start */
 .footer-section{
-    background-color: #333;
+    background-color: var(--primary-text);
 }
 .footer-section-one{
     display: flex;
@@ -478,8 +500,8 @@ html{
 }
 .information a{
     text-decoration: none;
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--secondary-text);
+    font-family: var(--font-family);
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
@@ -487,8 +509,8 @@ html{
     letter-spacing: 0.42px;
 }
 .information h4{
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--secondary-text);
+    font-family: var(--font-family);
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
@@ -501,9 +523,9 @@ html{
 }
 .contacts a{
     text-decoration: none;
-    color: #FFF;
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--secondary-text);
+    color: var(--secondary-text);
+    font-family: var(--font-family);
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
@@ -517,11 +539,11 @@ html{
     width: 22%;
 }
 .contacts i{
-    color: #FFF;
+    color: var(--secondary-text);
 }
 .phone p{
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--secondary-text);
+    font-family: var(--font-family);
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
@@ -534,8 +556,8 @@ html{
     gap: 20px;
 }
 .contacts h4{
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--secondary-text);
+    font-family: var(--font-family);
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
@@ -553,11 +575,11 @@ html{
 }
 .inbox a{
     text-decoration: none;
-    color: #FFF;
+    color: var(--secondary-text);
 }
 .social h3{
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--secondary-text);
+    font-family: var(--font-family);
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
@@ -568,7 +590,7 @@ html{
     gap: 3rem;
 }
 .footer-section i {
-    color: #FFF;
+    color: var(--secondary-text);
     font-size: 2rem;
 }
 .last-footer{
@@ -625,7 +647,7 @@ html{
     cursor: pointer;
 }
 #gellery .num-one{
-    color: #333;
+    color: var(--primary-text);
 }
 
 
@@ -653,8 +675,8 @@ html{
     padding-right: 7rem;
 }
 .new-project h2{
-    color: var(--Gray-4, #BDBDBD);
-    font-family: Roboto;
+    color: var(--Gray-4, var(--thirth-color));
+    font-family: var(--font-family);
     font-size: 4rem;
     font-style: normal;
     font-weight: 300;
@@ -665,7 +687,7 @@ html{
 .new-project p{
     padding-bottom: 6rem;
     color: #000;
-    font-family: Roboto;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 300;
@@ -673,10 +695,10 @@ html{
 }
 .new-project button{
     padding: 2rem;
-    background-color: #fff;
+    background-color: var(--secondary-text);
     border: none;
-    color: var(--Gray-1, #333);
-    font-family: Roboto;
+    color: var(--Gray-1, var(--primary-text));
+    font-family: var(--font-family);
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
@@ -705,7 +727,7 @@ html{
     cursor: pointer;
 }
 #project .num-one{
-    color: #333;
+    color: var(--primary-text);
 }
 /* contact section start */
 
@@ -731,8 +753,8 @@ html{
     height: 100%;
 }
 .contacts-section-one h5{
-    color: #333;
-    font-family: Roboto;
+    color: var(--primary-text);
+    font-family: var(--font-family);
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 700;
@@ -741,8 +763,8 @@ html{
     padding-bottom: 0.5rem;
 }
 .contacts-section-one p{
-    color: #333;
-    font-family: Roboto;
+    color: var(--primary-text);
+    font-family: var(--font-family);
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 300;
@@ -751,16 +773,16 @@ html{
 .contact-number p{
     padding-top: 4rem;
     padding-bottom: 4rem;
-    color: #333;
-    font-family: Roboto;
+    color: var(--primary-text);
+    font-family: var(--font-family);
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 .gmail-four p{
-    color: #333;
-    font-family: Roboto;
+    color: var(--primary-text);
+    font-family: var(--font-family);
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 300;
@@ -769,10 +791,10 @@ html{
 }
 .contacts-section-one button{
     padding: 3rem 8rem;
-    color: #FFF;
-    background-color: #333;
+    color: var(--secondary-text);
+    background-color: var(--primary-text);
     border: none;
-    font-family: Roboto;
+    font-family: var(--font-family);
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
@@ -793,6 +815,9 @@ html{
     .container{
         width: 95%;  
     }
+    html {
+        font-size: 55%;
+    }
     .navber{
         padding-right: 0rem;
     }
@@ -802,7 +827,7 @@ html{
         height: 50vh;
         top: 102px;
         left: -200%;
-        background-color: #fff;
+        background-color: var(--secondary-text);
         transition: all .1s;
         flex-direction: column;
         gap: 15px;
@@ -874,6 +899,9 @@ html{
     .flex-area-sub{
         width: 45%;
     }
+    .four-section h2{
+        text-align: center;
+    }
     .wrapper{
         padding-left: 3rem;
         padding-right: 3rem;
@@ -923,8 +951,14 @@ html{
         text-align: center;
     }
     .contact-one{
-        gap: 10rem;
-        margin-bottom: 48rem;
+        gap: 6rem;
+    }
+    .contact-form{
+        width: 100%;
+    }
+    .btn-three{
+        display: flex;
+        justify-content: center;
     }
     .contact-two{
         width: 80%;
@@ -933,10 +967,6 @@ html{
     .contact-img{
         width: 80%;
         margin: 0 auto;
-    }
-    .btn-three button{
-        margin: 0 auto;
-        display: flex;
     }
     .footer-section-one{
         margin-top: 4rem;
@@ -1028,7 +1058,7 @@ html{
     }
     #gellery .gellery-img{
         width: 100%;
-        height: 50rem;
+        height: 40rem;
     }
     #project .your-project-three img{
         width: 100%;
